@@ -1,0 +1,13 @@
+.ui {
+  position : absolute;
+  top : 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
