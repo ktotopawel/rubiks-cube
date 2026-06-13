@@ -1,13 +1,60 @@
 .ui {
-  position : absolute;
-  top : 20px;
-  left: 20px;
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 12px;
   z-index: 100;
 }
 
 .btn {
-  font-size: 1.5rem;
+  padding: 12px 28px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
+.btn-scramble {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.btn-scramble:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.btn-solve {
+  background: rgba(99, 160, 255, 0.15);
+  color: rgba(160, 200, 255, 0.9);
+  border-color: rgba(99, 160, 255, 0.3);
+}
+
+.btn-solve:hover {
+  background: rgba(99, 160, 255, 0.25);
+  border-color: rgba(99, 160, 255, 0.6);
+  color: #ffffff;
+  box-shadow: 0 0 24px rgba(99, 160, 255, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
